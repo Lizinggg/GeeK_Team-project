@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG",
+    "sources": [
+        "main.scss",
+        "_hero-header.scss",
+        "_products.scss",
+        "_about.scss",
+        "_advantages.scss",
+        "_gallery.scss",
+        "_customer-reviews.scss",
+        "_contacts.scss",
+        "_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
