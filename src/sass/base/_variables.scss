@@ -1,0 +1,13 @@
+:root {
+  --main-text-color: #ffffff;
+  --second-text-color: #000000;
+  --third-text-color: #907e82;
+  --title-text-color: #d41443;
+  --second-title-color: #ffa5ba;
+  --accent-color: #d41443;
+  --hover-color: #c7133e;
+}
+%animation {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
