@@ -1,14 +1,43 @@
+
+.advantages {
+  background-color: #fff5f6;
+}
+
 .advantages__container {
   display: flex;
-  background-color: #fff5f6;
-  padding-bottom: 139px;
+  padding-bottom: 140px;
 }
 .advantages-list {
   margin: 0 auto;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.advantages-list__item:not(:last-child) {
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
+    margin-bottom: 38px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 .advantages-list__item {
-  flex-basis: calc(100% / 3 - 30px);
+  max-width: 230px;
+  @media screen and (min-width: 768px) {
+    max-width: 180px;
+    flex-basis: calc(100% / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 330px;
+    flex-basis: calc(100% / 3);
+  }
 }
 .advantages-list__icon-box::before {
   background-image: url(../images/advantages/icon1.png);
@@ -32,19 +61,47 @@
   height: 50px;
 }
 .advantages__title {
+
+  font-family: Titan One;
   font-weight: 500;
-  font-size: 58px;
+  font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  padding-top: 40px;
-  margin-bottom: 15px;
+
+  padding-top: 16px;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    padding-top: 36px;
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    padding-top: 40px;
+    margin-bottom: 15px;
+  }
 }
 .advantages__after-title {
+  width: 230px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 12px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
