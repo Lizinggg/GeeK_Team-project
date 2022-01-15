@@ -1,50 +1,50 @@
-// .advantages__container {
-//   display: flex;
-//   background-color: #fff5f6;
-//   padding-bottom: 139px;
-// }
-// .advantages-list {
-//   margin: 0 auto;
-//   display: flex;
-// }
-// .advantages-list__item {
-//   flex-basis: calc(100% / 3 - 30px);
-// }
-// .advantages-list__icon-box::before {
-//   background-image: url(../images/advantages/icon1.png);
-//   content: ' ';
-//   display: inline-block;
-//   width: 33px;
-//   height: 50px;
-// }
-// .advantages-list__icon-box2::before {
-//   background-image: url(../images/advantages/icon2.png);
-//   content: ' ';
-//   display: inline-block;
-//   width: 50px;
-//   height: 50px;
-// }
-// .advantages-list__icon-box3::before {
-//   background-image: url(../images/advantages/icon3.png);
-//   content: ' ';
-//   display: inline-block;
-//   width: 44px;
-//   height: 50px;
-// }
-// .advantages__title {
-//   font-weight: 500;
-//   font-size: 58px;
-//   line-height: 1.14;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   color: var(--title-text-color);
-//   padding-top: 40px;
-//   margin-bottom: 15px;
-// }
-// .advantages__after-title {
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.75;
-//   letter-spacing: 0.02em;
-//   color: var(--second-text-color);
-// }
+.advantages__container {
+  display: flex;
+  background-color: #fff5f6;
+  padding-bottom: 139px;
+}
+.advantages-list {
+  margin: 0 auto;
+  display: flex;
+}
+.advantages-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.advantages-list__icon-box::before {
+  background-image: url(../images/advantages/icon1.png);
+  content: ' ';
+  display: inline-block;
+  width: 33px;
+  height: 50px;
+}
+.advantages-list__icon-box2::before {
+  background-image: url(../images/advantages/icon2.png);
+  content: ' ';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.advantages-list__icon-box3::before {
+  background-image: url(../images/advantages/icon3.png);
+  content: ' ';
+  display: inline-block;
+  width: 44px;
+  height: 50px;
+}
+.advantages__title {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  padding-top: 40px;
+  margin-bottom: 15px;
+}
+.advantages__after-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
