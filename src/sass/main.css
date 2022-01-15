@@ -3,4 +3,238 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+:root {
+  --main-text-color: #ffffff;
+  --second-text-color: #000000;
+  --third-text-color: #907e82;
+  --title-text-color: #d41443;
+  --second-title-color: #ffa5ba;
+  --accent-color: #d41443;
+  --hover-color: #c7133e;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--second-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.advantages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff5f6;
+  padding-bottom: 140px;
+}
+
+.advantages-list {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.5px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__item:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages-list__item {
+  max-width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    max-width: 180px;
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    max-width: 330px;
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
+}
+
+.advantages-list__icon-box::before {
+  background-image: url(../images/advantages/icon1.png);
+  content: ' ';
+  display: inline-block;
+  width: 33px;
+  height: 50px;
+}
+
+.advantages-list__icon-box2::before {
+  background-image: url(../images/advantages/icon2.png);
+  content: ' ';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.advantages-list__icon-box3::before {
+  background-image: url(../images/advantages/icon3.png);
+  content: ' ';
+  display: inline-block;
+  width: 44px;
+  height: 50px;
+}
+
+.advantages__title {
+  font-family: Titan One;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    padding-top: 40px;
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__after-title {
+  width: 230px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__after-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__after-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
 /*# sourceMappingURL=main.css.map */
