@@ -1,6 +1,8 @@
 <header class="page-header" id="home">
   <div class="page-header__box container-my">
-    <a href="./index.html" class="page-header__logo"><img src="./images/1200/logo.png" alt="" /></a>
+    <a href="./index.html" class="page-header__logo">
+      <img src="./images/1200/logo.png" alt=""
+    /></a>
     <nav class="page-header__nav">
       <ul class="site-nav-list list">
         <li class="site-nav-list__item">
@@ -25,8 +27,17 @@
       class="button-menu button-menu--open js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
-    ></button>
-    <button class="page-header__button">Buy now</button>
+    >
+      <svg class="button-menu__icon">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="page-header-button page-header-button--none">
+      Buy now
+      <svg class="page-header-button__icon" width="4px" height="8px">
+        <use href="./images/icons.svg#icon-vector"></use>
+      </svg>
+    </button>
   </div>
 
   <!-- Mobile menu -->
@@ -38,7 +49,12 @@
         </svg>
       </button>
 
-      <button type="button" class="mobile-menu__button">Buy now</button>
+      <button type="button" class="page-header-button mobile-menu__button">
+        Buy now
+        <svg class="page-header-button__icon" width="4px" height="8px">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
 
       <ul class="menu-nav list">
         <li class="menu-nav__item">
@@ -84,7 +100,11 @@
       sed do eiusmod tempor <br />
       incididunt ut labore et
     </p>
-    <a href="" class="hero__link-description"></a>
+    <a href="" class="hero__link-description">
+      <svg width="4px" height="8px">
+        <use href="./images/icons.svg#icon-vector"></use>
+      </svg>
+    </a>
     <ul class="secondary-content-list list">
       <li class="secndary-content-list__item">
         <span class="secndary-content-list__text">16 <br /></span
