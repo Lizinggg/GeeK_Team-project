@@ -367,9 +367,6 @@
   color: var(--accent-color);
 }
 
-.menu-nav {
-}
-
 .menu-nav__item {
   border: 1px solid #e18298;
 }
@@ -417,6 +414,9 @@
 }
 
 .button-menu--close {
+  position: absolute;
+  top: 23px;
+  left: 206px;
   display: block;
   margin-left: auto;
 }
