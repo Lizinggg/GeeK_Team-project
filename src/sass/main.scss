@@ -9,12 +9,17 @@
 @import './base/reset';
 @import './base/container';
 @import './base/visually-hidden';
+//
 @import './hero-header';
 @import './products';
 @import './about';
+
+@import './modal-about';
 @import './advantages';
 @import './gallery';
 @import './customer-reviews';
 @import './contacts';
 @import './footer';
+//
 @import './components/button';
+@import './components/about-backdrop';

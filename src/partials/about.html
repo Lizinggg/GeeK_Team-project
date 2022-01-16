@@ -1,7 +1,7 @@
 <section class="about">
   <div class="about__container">
     <label for="about__title" class="about__main-title">tradition and love</label>
-    <h3 class="about__title" id="about__title">how it’s made?</h3>
+    <h2 class="about__title" id="about__title">how it’s made?</h2>
     <div class="about__wrapper">
       <div class="about__card">
         <picture>
@@ -35,7 +35,7 @@
             urna maximus. Cras massa nibh, tincidunt.
           </p>
           <p class="about__slogan">Aliquam erat volutpat. Aenean accumsan.</p>
-          <button type="button" class="about__btn">
+          <button data-modal-open type="button" class="about__btn">
             Read more
             <svg class="about__icon">
               <use href="./images/icons.svg#icon-btn-arrow"></use>
@@ -46,3 +46,43 @@
     </div>
   </div>
 </section>
+<!-- Модалка -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close">
+      <svg class="modal__icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="about-form">
+      <h2 class="form__tittle">
+        Best milk in the world for our <br />
+        Ice Cream
+      </h2>
+      <div class="form__field">
+        <p class="form__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad corrupti quisquam quis
+          consectetur animi! Sapiente deserunt accusantium ea, eligendi quod a quis nobis atque quae
+          sed deleniti illo optio ut! Voluptas nobis perferendis, quibusdam dolores ipsum doloribus
+          magni unde velit commodi nisi culpa quasi, ipsa est eius vitae autem? Deserunt
+          necessitatibus eum nobis repudiandae nam eos totam ipsum. Minima, facilis? Officia
+          doloremque non natus, nisi numquam omnis! Odio ab esse neque, iste quia ipsam voluptatibus
+          ad perspiciatis omnis. Ab magni doloribus sed quibusdam fugiat asperiores minus atque
+          sequi velit? Laudantium. Distinctio, quo? Dolorem voluptatum inventore dolorum, rem
+          voluptatibus facere nulla facilis neque quibusdam est modi, tenetur, iste veritatis quis
+          quae officia? Perferendis dolores quidem officiis. Natus perspiciatis pariatur consectetur
+          fugit!
+        </p>
+      </div>
+      <div class="form__field">
+        <label for="email">Email</label>
+        <input class="form__input" type="email" name="mail" id="email" autocomplete="on" />
+        <svg class="form__icon">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>      
+      </label>
+      <button class="submit-button button--color-inversion" type="submit">Send Email</button>
+    </form>
+  </div>
+</div>
