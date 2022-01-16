@@ -68,7 +68,10 @@
   color: var(--title-text-color);
 }
 
-.page-header__button {
+.page-header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 160px;
   height: 44px;
   border: 0px;
@@ -81,13 +84,20 @@
   color: var(--title-text-color);
   background-color: var(--main-text-color);
   @extend %animation;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+
   &:hover,
   &:focus {
     background: #ecebeb;
   }
+}
+.page-header-button--none {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.page-header-button__icon {
+  margin-left: 12px;
 }
 
 .hero {
@@ -107,6 +117,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/320-2x/slider-pic-mob-2x.png),
       url(../images/320-2x/ellipse-mob-2x.png);
+    background-size: 171px, 346px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 102px;
@@ -118,6 +129,7 @@
       background-image: url(../images/768-2x/slider-pic-tab-2x.png),
         url(../images/768-2x/girl-tab-2x.png), url(../images/768-2x/ellipse-tab-2x.png),
         url(../images/768-2x/slider-pic-milk-tab-2x.png);
+      background-size: 143px, 168px, 324px, 124px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -129,6 +141,7 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/1200-2x/slider-pic-2x.png), url(../images/1200-2x/girl-2x.png),
         url(../images/1200-2x/ellipse-2x.png), url(../images/1200-2x/slider-pic-milk-2x.png);
+      background-size: 236px, 293px, 538px, 188px;
     }
   }
 }
@@ -234,7 +247,9 @@
   }
 }
 .hero__link-description {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 18px;
   height: 18px;
   background-color: var(--main-text-color);
@@ -273,6 +288,7 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/768-2x/ellipse-min-tab-2x.png);
+    background-size: 16px;
   }
   @media screen and (min-width: 1200px) {
     width: 92px;
@@ -280,6 +296,7 @@
     background-image: url(../images/1200/ellipse-min.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/1200-2x/ellipse-min-2x.png);
+      background-size: 30px;
     }
   }
 
@@ -357,13 +374,6 @@
   margin-right: auto;
   margin-bottom: 19px;
 
-  border: 0;
-  border-radius: 22px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-
   color: var(--accent-color);
 }
 
@@ -384,27 +394,22 @@
 }
 
 .button-menu {
-  width: 20px;
-  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media screen and (min-width: 1200px) {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  @media screen and(min-width:1200px) {
     display: none;
   }
 }
-
-// .button-menu {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   padding: 0;
-//   border: 0;
-//   background-color: transparent;
-
-//   @media screen and(min-width:1200px) {
-//     display: none;
-//   }
-// }
+.button-menu__icon {
+  width: 20px;
+  height: 12px;
+}
 
 .button-menu--open {
   margin-left: auto;
@@ -416,11 +421,8 @@
 .button-menu--close {
   position: absolute;
   top: 23px;
-  left: 206px;
+  left: auto;
+  right: 34px;
   display: block;
   margin-left: auto;
-}
-
-.button-menu__icon {
-  fill: currentColor;
 }
