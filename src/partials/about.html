@@ -1,7 +1,7 @@
 <section class="about">
   <div class="about__container">
     <label for="about__title" class="about__main-title">tradition and love</label>
-    <h3 class="about__title" id="about__title">how it’s made?</h3>
+    <h2 class="about__title" id="about__title">how it’s made?</h2>
     <div class="about__wrapper">
       <div class="about__card">
         <picture>
@@ -35,7 +35,7 @@
             urna maximus. Cras massa nibh, tincidunt.
           </p>
           <p class="about__slogan">Aliquam erat volutpat. Aenean accumsan.</p>
-          <button type="button" class="about__btn">
+          <button data-modal-open type="button" class="about__btn">
             Read more
             <svg class="about__icon">
               <use href="./images/icons.svg#icon-btn-arrow"></use>
@@ -46,3 +46,36 @@
     </div>
   </div>
 </section>
+<!-- Модалка -->
+<div class="about__backdrop is-hidden" data-modal>
+  <div class="about__modal">
+    <button data-modal-close class="about__modal-close">
+      <svg class="modal__icon">
+        <use href="./images/icons.svg#icon-close-about"></use>
+      </svg>
+    </button>
+    <form class="about__form">
+      <h2 class="about__form-tittle">
+        Best milk in the world for our <br />
+        Ice Cream
+      </h2>
+      <div class="about__form-field">
+        <p class="about__form-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum necessitatibus porro maxime blanditiis nihil architecto quisquam magni cupiditate voluptas voluptatibus, veniam aut earum et inventore harum pariatur quae reprehenderit vitae?
+          Cumque nisi esse fuga consectetur veniam placeat quidem! Debitis repellat, tempora doloribus architecto placeat tempore vitae dolore asperiores fugit, dignissimos qui molestias. Ullam ex numquam eos veniam aspernatur, iste consectetur.
+          Omnis reiciendis odio, molestias excepturi nemo natus repellendus? Eum quis dicta reprehenderit ea dolorem optio quasi, voluptates mollitia recusandae facere illo blanditiis in expedita, aspernatur explicabo impedit illum corporis eius.
+          
+        </p>
+      </div>
+      <div class="about__form-field">
+        <label for="email">Email</label>
+        <input class="form__input" type="email" name="mail" id="email" autocomplete="on" />
+        <svg class="about__form-icon">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>      
+      </label>
+      <button class="about__submit-button button--color-inversion" type="submit">Send Email</button>
+    </form>
+  </div>
+</div>

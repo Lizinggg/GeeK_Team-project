@@ -9,10 +9,8 @@ img {
 .about {
   padding-top: 125px;
   padding-bottom: 39px;
-  // height: 999px;
   background-color: #fff5f6;
   @media screen and (min-width: 768px) {
-    // height: 786px;
     padding-top: 130px;
     padding-bottom: 65px;
   }
@@ -51,8 +49,6 @@ img {
   color: var(--second-title-color);
 }
 .about__title {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-bottom: 26px;
   font-family: Titan One;
   font-style: normal;
@@ -82,9 +78,11 @@ img {
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
     background-repeat: no-repeat;
-    background-position: 50% 75%;
-    background-size: 1200px;
+    background-position: 50% 70%;
+    background-size: 1280px;
     background-image: url(../images/1200/about-img-2-1200.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/1200-2x/about-img-2-1200-2x.png);
@@ -93,13 +91,10 @@ img {
 }
 
 .about__card {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 46px;
   @media screen and (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
-    // margin-left: 39px;
     margin-bottom: 0;
     height: 339px;
     width: 340px;
@@ -112,8 +107,6 @@ img {
 }
 
 .about__thumb {
-  padding-left: 50px;
-  padding-right: 50px;
   @media screen and (min-width: 480px) {
     margin: 0 auto;
     width: 380px;
@@ -187,10 +180,11 @@ img {
 }
 
 .about__holder {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 50px;
+  padding-right: 50px;
   @media screen and (max-width: 767px) {
     width: 100%;
+    background-size: contain;
     background-image: url(../images/320/about-img-2-320.png);
     background-repeat: no-repeat;
     background-position: 50% 75%;
@@ -202,6 +196,8 @@ img {
     display: flex;
     margin-top: 51px;
     margin-left: 17px;
+    padding-left: 0;
+    padding-right: 0;
     width: 340px;
   }
   @media screen and (min-width: 1200px) {
@@ -215,10 +211,10 @@ img {
   margin: 0 auto;
   width: 176px;
   height: 44px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-right: 56px;
-  padding-left: 37px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 30px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
