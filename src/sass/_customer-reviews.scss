@@ -1,3 +1,6 @@
+.slider__item {
+  position: relative;
+}
 .slider__img {
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +29,16 @@
     padding: 47px 0 0 0;
   }
 }
+.slider-text-wrap::after {
+  background-image: url(../images/customer-riviews/Group8.png);
+  content: ' ';
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  position: absolute;
+  left: 49%;
+  top: 310px;
+}
 .slider__text {
   max-width: 157px;
   margin-left: auto;
@@ -53,9 +66,22 @@
     line-height: 1.87;
   }
 }
+.slider__text::before {
+  background-image: url(../images/customer-riviews/quotes.png);
+  content: ' ';
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  left: 195px;
+  top: 127px;
+}
 .slider__text--name {
   margin-top: 10px;
   background-image: none;
+  &::before {
+    background-image: none;
+  }
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.87;
@@ -84,7 +110,16 @@
   height: 10px;
   background-color: #d9d9d9;
   border-radius: 50%;
+  border: none;
 }
 .slick-dots li.slick-active button {
-  background-color: #d31342;
+  background-color: transparent;
+  background-image: url('../images/customer-riviews/home1.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 13px;
+  height: 12px;
+  border-radius: 0;
 }
