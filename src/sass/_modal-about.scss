@@ -1,5 +1,5 @@
 /* ------------------------------------форма----------------------------------------- */
-.about-form {
+.about__form {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   }
 }
 
-.form__tittle {
+.about__form-tittle {
   display: block;
   margin-bottom: 12px;
   margin: 0 auto;
@@ -43,41 +43,36 @@
   margin-bottom: 12px;
   color: var(--accent-color);
   text-shadow: 1px 0px 8px rgb(255, 255, 255);
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
-    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 23px;
   }
 }
 
-.form__field {
+.about__form-field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form__text {
+.about__form-text {
   margin: 0 auto;
-  width: 90%;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   @media screen and (min-width: 480px) {
-    margin: 0 0;
-    // width: 350px;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
 }
 
-.form__field label {
+.about__form-field label {
   text-align: center;
   font-size: 16px;
   line-height: 1.17;
@@ -86,21 +81,28 @@
   color: var(--accent-color);
 }
 
-.form__field input {
+.about__form-field input {
   cursor: pointer;
+  margin: 0 auto;
   width: 200px;
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  margin: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    width: 250px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
   &:focus {
     border: 1px solid var(--accent-color);
     box-sizing: border-box;
@@ -110,7 +112,7 @@
   }
 }
 
-.form__icon {
+.about__form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -123,15 +125,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea {
-  margin-bottom: 20px;
-}
-
-.form__comment {
-  padding: 12px 16px;
-}
-
-.submit-button {
+.about__submit-button {
   display: block;
   margin: 0 auto;
   font-family: DM sans;
@@ -141,4 +135,11 @@
   line-height: 1.28;
   text-decoration: none;
   border: none;
+  outline: none;
+  &:hover,
+  :focus {
+    border: 3px solid var(--third-text-color);
+    background-color: #ecebeb;
+    transform: scale(1.05);
+  }
 }

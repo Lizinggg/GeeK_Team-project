@@ -1,5 +1,5 @@
 /* ----------------------------------------------modal------------------------------------ */
-.backdrop {
+.about__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,14 +18,14 @@
 }
 
 //
-.backdrop.is-hidden {
+.about__backdrop.is-hidden {
   & .modal {
     transform: translate(-50%, -50%) scale(1.3);
   }
 }
 //
 
-.modal {
+.about__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,7 +50,7 @@
   }
 }
 
-.modal__close {
+.about__modal-close {
   cursor: pointer;
   position: fixed;
   top: 12px;

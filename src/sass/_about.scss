@@ -9,10 +9,8 @@ img {
 .about {
   padding-top: 125px;
   padding-bottom: 39px;
-  // height: 999px;
   background-color: #fff5f6;
   @media screen and (min-width: 768px) {
-    // height: 786px;
     padding-top: 130px;
     padding-bottom: 65px;
   }
@@ -51,8 +49,6 @@ img {
   color: var(--second-title-color);
 }
 .about__title {
-  // padding-left: 15px;
-  // padding-right: 15px;
   margin-bottom: 26px;
   font-family: Titan One;
   font-style: normal;
@@ -99,7 +95,6 @@ img {
   @media screen and (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
-    // margin-left: 39px;
     margin-bottom: 0;
     height: 339px;
     width: 340px;
@@ -112,8 +107,6 @@ img {
 }
 
 .about__thumb {
-  // padding-left: 50px;
-  // padding-right: 50px;
   @media screen and (min-width: 480px) {
     margin: 0 auto;
     width: 380px;
@@ -218,8 +211,8 @@ img {
   margin: 0 auto;
   width: 176px;
   height: 44px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 50px;
   padding-left: 30px;
   font-family: DM Sans;
