@@ -11,12 +11,14 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
     />
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -29,7 +31,32 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
-
+    <!-- Подключение библиотеки JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+      integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Подключения слайдера Slick -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Подключения файла скриптов -->
+    <script>
+      $('.slider').slick({
+        arrows: false,
+        dots: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        draggable: false,
+      });
+    </script>
+    <!-- Скрипт открытия мобильного меню -->
+    <script src="./mobile-menu.js"></script>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
