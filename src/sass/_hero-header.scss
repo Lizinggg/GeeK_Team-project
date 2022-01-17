@@ -1,22 +1,17 @@
-.container-my {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 700px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1050px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+// .container-my {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+//   @media screen and (min-width: 480px) {
+//     width: 440px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 728px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 1160px;
+//   }
+// }
 
 .page-header {
   z-index: 1;
