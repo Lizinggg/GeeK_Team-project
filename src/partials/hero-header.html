@@ -1,8 +1,22 @@
 <header class="page-header" id="home">
   <div class="page-header__box container">
     <a href="./index.html" class="page-header__logo">
-      <img src="./images/1200/logo.png" alt=""
-    /></a>
+      <picture>
+        <source
+          srcset="./images/1200/logo.png 1x, ./images/1200-2x/logo-2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/1200/logo.png 1x, ./images/1200-2x/logo-2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/1200/logo.png 1x, ./images/1200-2x/logo-2x.png 2x"
+          media="(min-width:320px)"
+        />
+        <img src="./images/1200/logo.png" alt="logo" />
+      </picture>
+    </a>
     <nav class="page-header__nav">
       <ul class="site-nav-list list">
         <li class="site-nav-list__item">

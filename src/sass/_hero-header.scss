@@ -119,7 +119,7 @@
     padding-bottom: 34px;
     background-image: url(../images/768/slider-pic-tab.png), url(../images/768/girl-tab.png),
       url(../images/768/ellipse-tab.png), url(../images/768/slider-pic-milk-tab.png);
-    background-position: 344px 65px, right bottom, 273px 31px, 0px 245px;
+    background-position: 344px 70px, right bottom, 273px 31px, 0px 245px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/768-2x/slider-pic-tab-2x.png),
         url(../images/768-2x/girl-tab-2x.png), url(../images/768-2x/ellipse-tab-2x.png),
@@ -266,10 +266,10 @@
   }
   position: absolute;
   top: 94px;
-  left: 657px;
+  left: 680px;
   @media screen and (min-width: 1200px) {
     top: 156px;
-    left: 976px;
+    left: 1070px;
   }
 }
 
