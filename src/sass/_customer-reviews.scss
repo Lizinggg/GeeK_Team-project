@@ -29,16 +29,6 @@
     padding: 47px 0 0 0;
   }
 }
-.slider-text-wrap::after {
-  background-image: url(../images/customer-riviews/Group8.png);
-  content: ' ';
-  display: inline-block;
-  width: 32px;
-  height: 4px;
-  position: absolute;
-  left: 49%;
-  top: 310px;
-}
 .slider__text {
   max-width: 157px;
   margin-left: auto;
@@ -54,6 +44,7 @@
     #e1e1e1 30px
   );
   letter-spacing: 0.04em;
+  text-indent: 1;
   color: var(--second-text-color);
   @media screen and (min-width: 768px) {
     max-width: 460px;
@@ -66,16 +57,49 @@
     line-height: 1.87;
   }
 }
-.slider__text::before {
+.slider-text-wrap ::after {
+  background-image: url(../images/customer-riviews/Group8.png);
+  content: ' ';
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    bottom: 10%;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 14%;
+  }
+}
+.slider-text-wrap::before {
   background-image: url(../images/customer-riviews/quotes.png);
   content: ' ';
   display: inline-block;
   width: 54px;
   height: 40px;
   position: absolute;
-  left: 195px;
-  top: 127px;
+  top: 31%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  z-index: index -1;
+  @media screen and (min-width: 480px) {
+    top: 31%;
+    left: 39%;
+  }
+  @media screen and (min-width: 768px) {
+    top: 38%;
+    left: 17%;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 42%;
+    left: 17%;
+  }
 }
+
 .slider__text--name {
   margin-top: 10px;
   background-image: none;
