@@ -58,43 +58,111 @@
 
   <!-- Mobile menu -->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
-    <div class="mobile-menu__container">
-      <button class="button-menu button-menu--close js-close-menu">
-        <svg class="button-menu__icon" width="" height="">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+    <div class="backdrop">
+      <div class="mobile-menu__container">
+        <button class="button-menu button-menu--close js-close-menu">
+          <svg class="button-menu__icon" width="" height="">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-      <button type="button" class="page-header-button mobile-menu__button">
-        Buy now
-        <svg class="page-header-button__icon" width="4px" height="8px">
-          <use href="./images/icons.svg#icon-vector"></use>
-        </svg>
-      </button>
+        <button type="button" class="page-header-button mobile-menu__button">
+          Buy now
+          <svg class="page-header-button__icon" width="4px" height="8px">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
 
-      <ul class="menu-nav list">
-        <li class="menu-nav__item">
-          <a href="#home" class="menu-nav__link link scrollto">Home</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="#made" class="menu-nav__link link scrollto">About us</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="#about__title" class="menu-nav__link link scrollto">How it’s made?</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="#products" class="menu-nav__link link scrollto">Our products</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="#contact" class="menu-nav__link link scrollto">Contact</a>
-        </li>
-      </ul>
+        <ul class="menu-nav list">
+          <li class="menu-nav__item">
+            <a href="#home" class="menu-nav__link link scrollto">Home</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#made" class="menu-nav__link link scrollto">About us</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#about__title" class="menu-nav__link link scrollto">How it’s made?</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#products" class="menu-nav__link link scrollto">Our products</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#contact" class="menu-nav__link link scrollto">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="container continer-overley">
+  <div class="container container--relative">
+    <div class="hero-img hero-img__elips">
+      <picture>
+        <source
+          srcset="./images/1200/ellipse.png 1x, ./images/1200-2x/ellipse-2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/768/ellipse-tab.png 1x, ./images/768-2x/ellipse-tab-2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/320/ellipse-mob.png 1x, ./images/320-2x/ellipse-mob-2x.png 2x"
+          media="(min-width:320px)"
+        />
+        <img src="./images/1200/ellipse.png" alt="elips" />
+      </picture>
+    </div>
+    <div class="hero-img hero-img__ice-cream">
+      <picture>
+        <source
+          srcset="./images/1200/slider-pic.png 1x, ./images/1200-2x/slider-pic-2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/768/slider-pic-tab.png 1x, ./images/768-2x/slider-pic-tab-2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/320/slider-pic-mob.png 1x, ./images/320-2x/slider-pic-mob-2x.png 2x"
+          media="(min-width:320px)"
+        />
+        <img src="./images/1200/slider-pic.png" alt="ice-cream" />
+      </picture>
+    </div>
+    <div class="hero-img hero-img__girl">
+      <picture>
+        <source
+          srcset="./images/1200/girl.png 1x, ./images/1200-2x/girl-2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/768/girl-tab.png 1x, ./images/768-2x/girl-tab-2x.png 2x"
+          media="(min-width:768px)"
+        />
+
+        <img src="./images/1200/girl.png" alt="girl" />
+      </picture>
+    </div>
+    <div class="hero-img hero-img__milk">
+      <picture>
+        <source
+          srcset="./images/1200/slider-pic-milk.png 1x, ./images/1200-2x/slider-pic-milk-2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/768/slider-pic-milk-tab.png       1x,
+            ./images/768-2x/slider-pic-milk-tab-2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+
+        <img src="./images/1200/slider-pic-milk.png" alt="milk" />
+      </picture>
+    </div>
+
     <h1 class="hero__title">
       <span
         >ice cream <br />
