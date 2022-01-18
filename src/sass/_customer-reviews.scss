@@ -44,7 +44,7 @@
     #e1e1e1 30px
   );
   letter-spacing: 0.04em;
-  text-indent: 1;
+  position: relative;
   color: var(--second-text-color);
   @media screen and (min-width: 768px) {
     max-width: 460px;
@@ -65,14 +65,14 @@
   height: 4px;
   position: absolute;
   left: 50%;
-  bottom: 6%;
+  top: 319px;
   transform: translate(-50%, -50%);
 
   @media screen and (min-width: 768px) {
-    bottom: 10%;
+    top: 190px;
   }
   @media screen and (min-width: 1200px) {
-    bottom: 14%;
+    top: 162px;
   }
 }
 .slider-text-wrap::before {
