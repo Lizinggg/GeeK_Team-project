@@ -4,12 +4,14 @@
 }
 .gallery {
   background: #fff5f6;
-  background: linear-gradient(to bottom, #fff5f6 40%, #fff 40% 60%);
+  background: linear-gradient(to bottom, #fff5f6 24%, #fff 24% 76%);
   padding-bottom: 80px;
   @media screen and (min-width: 768px) {
     padding-bottom: 121px;
+    background: linear-gradient(to bottom, #fff5f6 27%, #fff 27% 73%);
   }
   @media screen and (min-width: 1200px) {
     padding-bottom: 123px;
+    background: linear-gradient(to bottom, #fff5f6 30%, #fff 30% 70%);
   }
 }
