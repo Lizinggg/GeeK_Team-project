@@ -49,6 +49,8 @@ img {
   color: var(--second-title-color);
 }
 .about__title {
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 26px;
   font-family: Titan One;
   font-style: normal;
@@ -58,9 +60,11 @@ img {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     padding-left: 0;
     padding-right: 0;
+  }
+  @media screen and (min-width: 768px) {
     margin-bottom: 50px;
     font-size: 48px;
     line-height: 1.46;
