@@ -16,12 +16,13 @@
     background-image: url(../images/320-2x/about-img-3-320-2x.png);
   }
   @media screen and (min-width: 480px) {
-    padding: 40px;
-    width: 450px;
+    padding: 20px;
+    width: 430px;
     height: 500px;
   }
 
   @media screen and (min-width: 768px) {
+    padding: 30px;
     width: 528px;
     height: 500px;
   }
@@ -72,8 +73,11 @@
   line-height: 1.4;
   letter-spacing: 0.04em;
   @media screen and (min-width: 480px) {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 17px;
   }
 }
 
