@@ -1,19 +1,22 @@
 .gallery {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  background: #fff5f6;
+  background: linear-gradient(to bottom, #fff5f6 24%, #fff 24% 76%);
+  padding-bottom: 80px;
+  // padding-top: 40px;
+  // padding-bottom: 40px;
   @media screen and (max-width: 767px) {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    // padding-top: 50px;
+    padding-bottom: 80px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-bottom: 121px;
+    background: linear-gradient(to bottom, #fff5f6 27%, #fff 27% 73%);
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-bottom: 123px;
+    background: linear-gradient(to bottom, #fff5f6 30%, #fff 30% 70%);
   }
 }
 
@@ -53,5 +56,5 @@
 }
 .gallery__img-box--up {
   align-self: flex-start;
-  padding-top: 50px;
+  padding-top: 30px;
 }
