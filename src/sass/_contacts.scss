@@ -1,3 +1,9 @@
+.contacts__container {
+  @media screen and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 .contacts {
   padding-top: 86px;
   padding-bottom: 113px;
@@ -19,14 +25,9 @@
   background-size: cover;
   background-position: center;
   @media screen and (min-width: 1200px) {
-    background-size: 1200px;
-
-    background-position-y: 100px;
-  }
-}
-.contacts__list {
-  @media screen and (min-width: 1200px) {
-    width: 253px;
+    background-position: 50% 33%;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 .contacts__item {
@@ -47,60 +48,46 @@
   margin: -1px;
 }
 .contacts__box {
-  background: var(--main-text-color);
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-  max-width: 220px;
-  padding: 43px 20px;
-  align-items: center;
+  width: 220px;
   margin: 0 auto;
-  height: 100%;
-  margin-bottom: 20px;
-}
-.contacts__box {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:not(:last-child) {
-    @media screen and (max-width: 480px) {
-      max-width: 220px;
-    }
-    @media screen and (min-width: 480px) {
-      max-width: 220px;
-    }
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0px 8px 20px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  transition: box-shadow 250ms linear;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 35px rgba(212, 20, 67, 0.4);
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    padding: 50px 31px;
-    margin: 0px 10px;
+    flex-basis: calc(100% - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 50px 30px;
   }
   @media screen and (min-width: 1200px) {
-    margin: 0px 15px;
-    padding: 51px 45px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 55px 40px;
   }
 }
-.contacts__box:hover {
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.contacts__box:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
-
 .contacts__box__list {
-  margin: 0 auto;
-  justify-content: center;
-  @media screen and (min-width: 480px) {
-    width: 220px;
-    margin-bottom: 54px;
-  }
-  @media screen and (max-width: 480px) {
-    margin-bottom: 54px;
-    width: 220px;
-  }
+  margin-bottom: 54px;
   @media screen and (min-width: 768px) {
-    width: 772px;
     display: flex;
-    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
     margin-bottom: 81px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    margin-top: -30px;
+    margin-left: -30px;
     margin-bottom: 86px;
   }
 }
