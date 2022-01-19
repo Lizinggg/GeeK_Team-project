@@ -217,6 +217,9 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
+  @media screen and (min-width: 768px) {
+    z-index: 1;
+  }
 }
 .hero-link-list__link {
   display: block;
