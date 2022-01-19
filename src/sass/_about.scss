@@ -10,6 +10,15 @@ img {
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: #fff5f6;
+  @media screen and (max-width: 767px) {
+    background-size: contain;
+    background-image: url(../images/320/about-img-2-320.png);
+    background-repeat: no-repeat;
+    background-position: 100% 88%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/320-2x/about-img-2-320-2x.png);
+    }
+  }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
     padding-bottom: 65px;
@@ -17,6 +26,14 @@ img {
   @media screen and (min-width: 1200px) {
     padding-top: 125px;
     padding-bottom: 39px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    background-size: 1280px;
+    background-image: url(../images/1200/about-img-2-1200.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/1200-2x/about-img-2-1200-2x.png);
+    }
   }
 }
 
@@ -80,17 +97,6 @@ img {
     display: flex;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
-    padding-left: 0;
-    padding-right: 0;
-    background-repeat: no-repeat;
-    background-position: 50% 70%;
-    background-size: 1280px;
-    background-image: url(../images/1200/about-img-2-1200.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/1200-2x/about-img-2-1200-2x.png);
-    }
-  }
 }
 
 .about__card {
@@ -110,10 +116,6 @@ img {
 }
 
 .about__thumb {
-  @media screen and (min-width: 480px) {
-    margin: 0 auto;
-    width: 380px;
-  }
   @media screen and (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
@@ -183,27 +185,18 @@ img {
 }
 
 .about__holder {
-  padding-left: 50px;
-  padding-right: 50px;
-  @media screen and (max-width: 767px) {
-    background-size: contain;
-    background-image: url(../images/320/about-img-2-320.png);
-    background-repeat: no-repeat;
-    background-position: 50% 75%;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/320-2x/about-img-2-320-2x.png);
-    }
-  }
+  max-width: 220px;
+  margin: auto;
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-top: 51px;
-    margin-left: 17px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 340px;
+    padding-top: 51px;
+    padding-left: 17px;
+    margin: 0;
+    max-width: 340px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 74px;
+    padding-left: 0;
     width: 463px;
   }
 }
