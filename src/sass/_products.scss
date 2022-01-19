@@ -8,15 +8,7 @@
     padding-bottom: 119px;
   }
 }
-.products__tittle-text {
-  padding-bottom: 141px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 150px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 259px;
-  }
-}
+
 .products__pre-tittle {
   font-family: Titan One;
   font-weight: 500;
@@ -40,8 +32,13 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-bottom: 141px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
     font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 259px;
   }
 }
 .products__list {
