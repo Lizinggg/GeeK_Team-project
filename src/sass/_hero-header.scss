@@ -58,12 +58,18 @@
   font-size: 16px;
   line-height: 1.31;
   color: var(--main-text-color);
+  @extend %animation;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .site-nav-list__link--red {
   color: var(--title-text-color);
 }
 
 .page-header-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,6 +91,39 @@
     background: #ecebeb;
   }
 }
+.page-header-button::after,
+.page-header-button::before {
+  content: '';
+  position: absolute;
+  border: 2px solid var(--title-text-color);
+
+  left: 0px;
+  opacity: 0;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 22px;
+  animation: pulse 2.5s linear infinite;
+}
+
+.page-header-button::after {
+  animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
 .page-header-button--none {
   @media screen and (max-width: 767px) {
     display: none;
@@ -117,15 +156,13 @@
   }
 }
 
-.continer__overley {
-}
 .hero-img {
   position: absolute;
 }
 
 .hero-img__elips {
   top: 83px;
-  right: 20px;
+  right: 0px;
   @media screen and (min-width: 768px) {
     top: 30px;
     left: 150px;
@@ -144,6 +181,14 @@
 .hero-img__girl {
   bottom: 0;
   right: 20px;
+
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -151,6 +196,12 @@
 .hero-img__milk {
   left: 20px;
   bottom: 30px;
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
