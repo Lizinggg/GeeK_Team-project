@@ -1,12 +1,5 @@
 .footer {
-  padding-bottom: 25px;
   background: #fff5f6;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 18px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 10px;
-  }
 }
 .footer__text {
   font-family: Titan One;
@@ -96,7 +89,6 @@
 .info-copyright {
   width: 150px;
   margin: auto;
-  padding-top: 22px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -106,15 +98,21 @@
   color: var(--third-text-color);
   @media screen and (min-width: 768px) {
     width: 100%;
-    padding-top: 29px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 9px;
   }
 }
 .container-info-copyright {
+  padding-bottom: 25px;
+  padding-top: 22px;
   border-top: 1px solid #e1e1e1;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 22px;
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 10px;
+    padding-top: 9px;
+  }
 }
 .box {
   margin-bottom: 43px;
