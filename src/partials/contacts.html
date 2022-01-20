@@ -101,13 +101,85 @@
           </div>
         </button>
 
-        <button type="button" class="contacts__button contacts__button-current">
+        <button type="button" class="contacts__button contacts__button-current js-open-modal">
           Franchise
           <svg class="contacts__icon">
             <use href="./images/icons.svg#icon-btn-arrow"></use>
           </svg>
         </button>
       </div>
+    </div>
+  </div>
+
+  <div class="backdrop__contacts is-hidden js-modal-container">
+    <div class="modal__contacts">
+      <button type="button" class="modal-close__button js-close-modal">
+        <svg class="modal-close__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Leave your contacts, we will call you back</p>
+      <form action="#" class="modal__form">
+        <div class="modal__field">
+          <label for="name">Name</label>
+          <div class="modal__input-wrap">
+            <input type="text" name="user-name" id="name" class="modal__input" />
+            <svg class="modal-contacts__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__field">
+          <label for="tel">Phone</label>
+          <div class="modal__input-wrap">
+            <input type="tel" name="user-tel" id="tel" class="modal__input" />
+            <svg class="modal-contacts__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__field">
+          <label for="email">Mail</label>
+          <div class="modal__input-wrap">
+            <input type="email" name="user-email" id="email" class="modal__input" />
+            <svg class="modal-contacts__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__field">
+          <label for="comment" class="modal__text">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            class="modal__comment"
+            placeholder="Type text"
+          ></textarea>
+        </div>
+
+        <div class="policy-box">
+          <input
+            type="checkbox"
+            name="policy"
+            id="policy"
+            class="policy-box__check visually-hidden"
+          />
+          <label for="policy" class="policy-box__text"
+            ><span class="policy-box__item">
+              <svg class="policy-box__icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I agree to the conditions of the&nbsp;<span class="policy-condition">
+              <a href="" class="policy-box__link" target="blank"> Contract</a></span
+            ></label
+          >
+        </div>
+        <button type="submit" class="button modal-send__button">Send</button>
+      </form>
     </div>
   </div>
 </section>
